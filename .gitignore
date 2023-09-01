@@ -1,0 +1,39 @@
+# Ignore build output
+build/
+bin/
+obj/
+
+# Ignore dependencies
+node_modules/
+packages/
+
+# Ignore logs and temp files
+*.log
+*.tmp
+*.temp
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.user
+*.sln.docstates
+
+
+# Ignore compiled code
+*.class
+*.jar
+*.war
+*.ear
+*.dll
+*.exe
+*.so
+*.ko
+*.o
+*.a
+*.lib
+*.obj
+*.pdb
+*.swp
+*.swo
+*.DS_Store
