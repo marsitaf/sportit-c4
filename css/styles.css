@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: #8b48bf;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  font-size: 12px;
+  font-weight: 300;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: rgba(139, 72, 191, 0.7);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button.primary {
+  width: 134px;
+  height: 44px;
+}
+
+button.secondary {
+  width: 63px;
+  height: 42px;
+}
