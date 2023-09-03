@@ -52,14 +52,22 @@
     <footer>
       <div class="container">
         <div>
-          <form class="newsletter-form">
+          <form 
+            class="newsletter-form"
+            name="newsletter-form"
+            action="" 
+            method="" 
+            target="_self"
+          >
             <input 
-              type="text" 
+              id="email"
+              type="email" 
               name="newsletter" 
               placeholder="Update in your inbox..." 
-              value=""
+              required
+              tabindex="1"
             >
-            <button class="secondary">Go</button>
+            <button type="submit" class="secondary">Go</button>
           </form>
   
           <div class="site-map">
