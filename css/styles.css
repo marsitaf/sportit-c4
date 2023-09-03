@@ -210,6 +210,10 @@ footer .copyright {
     padding: 10px 60px;
   }
 
+  header .container {
+    padding: 20px 80px;
+  }
+
   header .menu-btn {
     display: none;
   }
