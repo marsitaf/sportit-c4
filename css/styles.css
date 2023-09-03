@@ -9,6 +9,18 @@ a {
   text-decoration: none;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
 button {
   background-color: #8b48bf;
   color: #ffffff;
