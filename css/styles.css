@@ -92,8 +92,13 @@ header .menu a:hover {
   color: rgba(36, 46, 82, 0.6);
 }
 
+header .menu-btn {
+  width: 47px;
+}
+
 header button {
   box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+  flex: none;
 }
 
 #hero img {
@@ -104,7 +109,7 @@ header button {
   font-size: 50px;
   font-weight: 600;
   letter-spacing: -2px;
-  margin-top: 100px;
+  margin-top: 90px;
   margin-bottom: 20px;
   line-height: 1.2;
   color: rgba(35, 44, 80, 1);
@@ -197,7 +202,12 @@ footer .copyright {
   padding-top: 45px;
 }
 
-@media (max-width: 768px) {
+/*  
+  Media queries based on Bootstrap Breakpoints:
+  https://getbootstrap.com/docs/5.0/layout/breakpoints/
+*/
+
+@media (max-width: 767.98px) {
   header nav, header button {
     display: none;
   } 
@@ -216,13 +226,21 @@ footer .copyright {
 
   header .menu-btn {
     display: none;
+  } 
+
+  #hero {
+    padding-top: 30px;
   }
 
-  #hero .container {
-    display: flex;
-    padding-top: 80px;
-    padding-bottom: 140px ;
-  }  
+  #hero h1 {
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+
+  #hero p {
+    font-size: 17px;
+    margin-bottom: 35px;
+  }
 
   footer {
     padding: 60px 0 40px;
@@ -278,4 +296,23 @@ footer .copyright {
   footer .newsletter-form input {
     width: 201px;
   }   
+}
+
+@media (min-width: 992px) { 
+  #hero .container {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 140px ;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  #hero img {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  #hero button {
+    margin-bottom: 40px;
+  }
 }
