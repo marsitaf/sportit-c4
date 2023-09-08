@@ -45,17 +45,13 @@ button:active {
 }
 
 button.primary {
-  padding: 0.78rem 3.18rem;
-  /* width: 134px;
-  height: 44px; */
-  /* font-size: 14px;
-  font-weight: 200; */
+  width: 8.37rem;
+  height: 2.75rem;
 }
 
 button.secondary {
-  padding: 0.71rem 1.4rem;
-  /* width: 63px;
-  height: 42px; */
+  width: 3.93rem;
+  height: 2.62rem;
 }
 
 .container {
@@ -125,15 +121,18 @@ header button {
 }
 
 #banner-1 {
-  padding: 2.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.12rem;
+  justify-content: center;
   margin-bottom: 4.06rem;
+  padding: 2.5rem 1.25rem;
 }
 
 #banner-1 h2 {
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 2.57rem;
-  margin-bottom: 3.12rem;
 }
 
 #banner-1 p {
@@ -175,6 +174,7 @@ header button {
 .characteristics-header > h3 {
   color: #323851;
   background-color: rgba(139, 72, 191, 0.3);
+  font-size: 1rem;
   padding: 0.62rem 0 0.62rem 5.43rem;
   border-radius: 3.12rem 0 0 3.12rem;
 }
@@ -206,13 +206,17 @@ header button {
   color: #242e53;
 }
 
+#best-of-the-month article {
+  background-color: #fafafa;
+  display: flex;
+  margin-bottom: 2.81rem;
+}
+
 .botm-body {
   align-items: center;
-  background-color: #fafafa;
   display: flex;
   flex-direction: column;
   gap: 1.01rem;
-  margin-bottom: 2.81rem;
   padding-top: 3.5rem;
   padding-bottom: 1.7rem;
   position: relative;
@@ -358,6 +362,14 @@ footer .copyright {
   header button {
     display: none;
   }
+
+  #banner-1 p:nth-child(odd) {
+    display: none;
+  }
+
+  .botm-body:nth-child(odd) {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -387,6 +399,84 @@ footer .copyright {
   #hero p {
     font-size: 17px;
     margin-bottom: 35px;
+  }
+
+  #banner-1 {
+    align-items: center;
+    flex-direction: row;
+    gap: 6.94vw;
+    justify-content: center;
+    margin-bottom: 0;
+    padding: 2.5rem 0rem;
+  }
+
+  #banner-1 h2 {
+    width: 31.56vw;
+  }
+  #banner-1 p {
+    direction: ltr;
+    text-indent: 0;
+    width: 31.56vw;
+  }
+
+  #banner-1 p:nth-child(even) {
+    display: none;
+  }
+
+  .banner {
+    background-color: #8b48bf;
+  }
+
+  #characteristics {
+    background-color: #fafafa;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 1.8rem;
+    column-gap: 4.92rem;
+    justify-content: center;
+    margin-bottom: 6.06rem;
+    margin-left: 0;
+    padding: 2.5rem 0;
+  }
+
+  #characteristics > article {
+    flex-basis: 36.8%;
+  }
+
+  .characteristics-header > h3 {
+    background-color: transparent;
+  }
+
+  .characteristics-paragraph {
+    margin: 0.5rem 0 0.53rem 5.51rem;
+  }
+
+  #best-of-the-month {
+    margin-bottom: 11.25rem;
+    margin-left: 4.93%;
+    margin-right: 4.93%;
+  }
+
+  .botm-body {
+    padding-bottom: 1.3rem;
+  }
+
+  #banner-2 {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    padding: 4rem 11.45%;
+  }
+
+  #banner-2 h2 {
+    margin: 0;
+    text-align: left;
+    width: 25.68rem;
+  }
+
+  #banner-2 button {
+    background-color: #ffffff;
+    color: #8b48bf;
   }
 
   footer {
@@ -449,7 +539,7 @@ footer .copyright {
   #hero .container {
     display: flex;
     padding-top: 80px;
-    padding-bottom: 140px;
+    padding-bottom: 95.93px;
   }
 }
 
