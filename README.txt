@@ -5,6 +5,7 @@
     - main 
       * section 'hero'
     - footer
+    - base components(buttons) and base styles
 
   LUIGGI RODRÍGUEZ:
     - main 
